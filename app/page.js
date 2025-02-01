@@ -1,5 +1,5 @@
 "use client";
-
+import { Analytics } from "@vercel/analytics/react"
 import { useState, useEffect } from "react";
 
 const initialModules = [
