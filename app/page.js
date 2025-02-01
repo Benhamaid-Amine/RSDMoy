@@ -1,5 +1,5 @@
 "use client";
-import { Analytics } from "@vercel/analytics/react"
+
 import { useState, useEffect } from "react";
 
 const initialModules = [
@@ -66,7 +66,7 @@ export default function Home() {
         <title>Your Website Title</title>
         <meta name="description" content="M1 RSD Moyenne " />
         {/* Other meta tags, Open Graph, etc. */}
-      </Head>
+    </Head>
       <p className="text-center mt-2 text-3xl">
         M1 RSD Moyenne
       </p>
