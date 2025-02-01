@@ -62,6 +62,11 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+        <title>Your Website Title</title>
+        <meta name="description" content="M1 RSD Moyenne " />
+        {/* Other meta tags, Open Graph, etc. */}
+      </Head>
       <p className="text-center mt-2 text-3xl">
         M1 RSD Moyenne
       </p>
