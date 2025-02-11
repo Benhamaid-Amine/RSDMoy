@@ -145,14 +145,19 @@ export default function Home() {
                   <td className="border border-gray-400 p-2">{module.coef}</td>
                   <td className="border border-gray-400 p-2">{calculateModuleAverage(module).toFixed(2)}</td>
                 </tr>
+                
               ))}
+              <tr className="bg-gray-900 bg-opacity-50">
+              <td className="border border-gray-400 p-2">Moyenne Generale</td>
+              <td className=" p-2"></td>
+              <td className=" p-2"></td>
+              <td className=" p-2"></td>
+              <td className=" p-2"></td>
+              <td className={`border border-gray-400 p-2 ${average >= 10 ? 'text-green-500' : 'text-red-500'}`}>{average}</td>
+              </tr>
             </tbody>
           </table>
         </div>
-
-        {/* Average Display */}
-        <p className="text-xl mt-4">Moyenne du semestre : {average}</p>
-
         {/* Reset Button */}
         <button
           onClick={resetNotes}
