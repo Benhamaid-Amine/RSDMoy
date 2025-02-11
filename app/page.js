@@ -29,8 +29,10 @@ export default function Home() {
     const tpNum = parseFloat(tp) || 0;
     const examNum = parseFloat(exam) || 0;
 
-    if (td !== undefined && tp === undefined) return tdNum * 0.4 + examNum * 0.6; // TD + Examen
-    if (tp !== undefined && td === undefined) return tpNum * 0.4 + examNum * 0.6; // TP + Examen
+    // if (td !== undefined && tp === undefined) return tdNum * 0.4 + examNum * 0.6; // TD + Examen
+    // if (tp !== undefined && td === undefined) return tpNum * 0.4 + examNum * 0.6; // TP + Examen
+    if (td !== undefined && tp === undefined) return tdNum * 0.5 + examNum * 0.5; // TD + Examen
+    if (tp !== undefined && td === undefined) return tpNum * 0.5 + examNum * 0.5; // TP + Examen
     return examNum; // Seulement Examen
   };
 
@@ -67,7 +69,7 @@ export default function Home() {
         M1 RSD Moyenne
       </p>
       <div className="min-h-screen flex flex-col items-center justify-center p-4">
-        <h1 className="text-2xl font-bold mb-4">S1</h1>
+        <h1 className="text-2xl font-bold mb-4">S1 (50% 50%) </h1>
 
         {/* Responsive Table */}
         <div className="w-full overflow-x-auto">
