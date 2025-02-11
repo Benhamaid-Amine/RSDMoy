@@ -153,7 +153,18 @@ export default function Home() {
               <td className=" p-2"></td>
               <td className=" p-2"></td>
               <td className=" p-2"></td>
-              <td className={`border border-gray-400 p-2 ${average >= 10 ? 'text-green-500' : 'text-red-500'}`}>{average}</td>
+              <td className={`border border-gray-400 p-2 ${
+  modules.every(mod => 
+    (mod.td !== undefined ? mod.td !== "" : true) &&
+    (mod.tp !== undefined ? mod.tp !== "" : true) &&
+    mod.exam !== ""
+  )
+    ? (average >= 10 ? 'text-green-500' : 'text-red-500')
+    : ''
+}`}>
+  {average}
+</td>
+
               </tr>
             </tbody>
           </table>
