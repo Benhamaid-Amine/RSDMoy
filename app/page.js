@@ -1,4 +1,5 @@
 "use client";
+import { Analytics } from '@vercel/analytics/react';
 
 import { useState, useEffect } from "react";
 
@@ -138,4 +139,6 @@ export default function Home() {
       <p className="text-center mt-4 border rounded-lg border-gray-400 p-2">Developed by AmineBnh</p>
     </>
   );
+  <Analytics />
+
 }
