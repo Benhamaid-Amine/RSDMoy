@@ -99,8 +99,8 @@ export default function Home() {
             <div className="w-full overflow-x-auto">
               <table className="w-full border border-gray-400">
                 <thead>
-                  <tr className="text-white  ">
-                    <th>Module</th><th>Note TD</th><th>Note TP</th><th>Note Examen</th><th>Coefficient</th><th>Moyenne Module</th>
+                  <tr className="text-white ">
+                    <th >Module</th><th className='p-2'>Note TD</th><th className='p-2'>Note TP</th><th>Note Examen</th><th >Coeff</th><th>Moyenne Module</th>
                   </tr>
                 </thead>
                 <tbody>
