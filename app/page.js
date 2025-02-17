@@ -44,9 +44,9 @@ export default function Home() {
     const tdNum = parseFloat(td) || 0;
     const tpNum = parseFloat(tp) || 0;
     const examNum = parseFloat(exam) || 0;
-    if (td !== undefined && tp === undefined) return tdNum * 0.5 + examNum * 0.5;
-    if (tp !== undefined && td === undefined) return tpNum * 0.5 + examNum * 0.5;
-    if (td !== undefined && tp !== undefined) return ((tdNum + tpNum) / 2) * 0.5 + examNum * 0.5;
+    if (td !== undefined && tp === undefined) return tdNum * 0.4 + examNum * 0.6;
+    if (tp !== undefined && td === undefined) return tpNum * 0.4 + examNum * 0.6;
+    if (td !== undefined && tp !== undefined) return ((tdNum + tpNum) / 2) * 0.4 + examNum * 0.6;
     return examNum;
   };
 
@@ -93,7 +93,7 @@ export default function Home() {
           { title: "Semestre 2", modules: modulesS2, setModules: setModulesS2, average: averageS2, data: S2 }].map(({ title, modules, setModules, average, data }) => (
           <div key={title} className="mb-8 w-full">
             <div className="flex items-center justify-center mb-4">
-              <h1 className="text-xl ">{title} (50% 50%)</h1>
+              <h1 className="text-xl ">{title} (60% 40%)</h1>
               <button onClick={() => resetNotes(setModules, data)} className="ml-2 text-2xl">🔄</button>
             </div>
             <div className="w-full overflow-x-auto">
